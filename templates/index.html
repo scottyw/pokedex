@@ -53,9 +53,24 @@
 
     <div class="ui segment">
 
-      <form method="post" action="/action">
-        <input type="submit" value="Drop" />
-      </form>
+      <div class="ui horizontal segments">
+        <div class="ui segment">
+          <form method="get">
+            <div class="ui action input">
+              <input type="text" name="filter" placeholder="Search...">
+              <button class="ui button">Search</button>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="ui segment">
+          <div class="ui pagination menu">
+            <a class="active item" href="?page=1">1</a>
+            <a class="inactive item" href="?page=2">2</a>
+            <a class="inactive item" href="?page=3">3</a>
+            <div class="disabled item">...</div>
+          </div>
+        </div> -->
+      </div>
 
       <table class="ui celled striped table">
         <thead>
@@ -75,6 +90,8 @@
           {{end}}
         </tbody>
       </table>
+
+
 
     </div>
 
