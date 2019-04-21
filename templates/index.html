@@ -53,14 +53,16 @@
 
     <div class="ui segment">
 
+      <form method="get" id="search"></form>
+      <form method="get" id="reset"></form>
+
       <div class="ui horizontal segments">
         <div class="ui segment">
-          <form method="get">
-            <div class="ui action input">
-              <input type="text" name="filter" placeholder="Search...">
-              <button class="ui button">Search</button>
-            </div>
-          </form>
+          <div class="ui action input">
+            <input form="search" type="text" name="filter" value="" placeholder="Search...">
+            <button form="search" class="ui button" type="submit">Search</button>
+            <button form="reset" class="ui button" type="submit">Reset</button>
+          </div>
         </div>
         <!-- <div class="ui segment">
           <div class="ui pagination menu">
